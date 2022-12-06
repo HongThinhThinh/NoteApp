@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="toDo">
+        <div class="toDo__left">
+            <span style="margin-bottom: 20px;" class="loader"></span>
+            <ul>
+                <li>
+                    <ion-icon name="home-outline"></ion-icon> <a href="">Home</a>
+                </li>
+
+                <li>
+                    <ion-icon name="list-circle-outline"></ion-icon> <a href="">DashBoard</a>
+                </li>
+
+                <li>
+                    <ion-icon name="newspaper-outline"></ion-icon> <a href="">Task</a>
+                </li>
+
+                <li>
+                    <ion-icon name="settings-outline"></ion-icon> <a href="">Setting</a>
+                </li>
+            </ul>
+            <div class="toDo__left__box">
+                <img src="./img/cute-successful-businessman-complete-task-cartoon-vector-icon-illustration-design-isolated-white-flat-cartoon-style_422763-388-removebg-preview.png"
+                    alt="">
+                <p>You can add more task for your daily</p>
+                <button id="button" class="button"><span>+ Add Task</span></button>
+            </div>
+        </div>
+        <div class="toDo__right">
+            <div class="toDo__right__wrap">
+                <div class="toDo__right__wrap__top">
+                    <h1>TodoList</h1>
+                    <div class="toDo__right__wrap__top--right">
+                        <div class="form-control">
+                            <input type="value" required="">
+                            <label>
+                                <span style="transition-delay:0ms">S</span>
+                                <span style="transition-delay:50ms">e</span>
+                                <span style="transition-delay:100ms">a</span>
+                                <span style="transition-delay:150ms">r</span>
+                                <span style="transition-delay:200ms">c</span>
+                                <span style="transition-delay:250ms">h</span>
+                                <span style="transition-delay:270ms"> </span>
+                                <span style="transition-delay:300ms">H</span>
+                                <span style="transition-delay:350ms">e</span>
+                                <span style="transition-delay:400ms">r</span>
+                                <span style="transition-delay:450ms">e</span>
+
+                            </label>
+                        </div>
+                        <img src="./img/istockphoto-954281178-170667a-removebg-preview.png" alt="">
+                    </div>
+                </div>
+                <div class="toDo__right__wrap__note">
+                    <div class="card" style="width: 23rem;">
+                        <div class="card-body">
+                            <a class="btn btn-danger important">
+                                <ion-icon name="bookmark-outline"></ion-icon> Important
+                            </a>
+                            <div class="time">
+                                <h4 class="card-title">02/12/2003</h4>
+                                <h5 class="card-title">00:00 PM </h5>
+                            </div>
+                            <p class="card-text">Sinh nhật HT</p>
+
+                            <div class="bot">
+                                <a href="#" class="btn btn-primary">
+                                    <ion-icon class="icon" name="create-outline"></ion-icon>
+                                    <span>Update</span>
+                                </a>
+                                <a href="#" class="btn btn-success">
+                                    <ion-icon class="icon" name="checkmark-done-outline"></ion-icon> <span>Done</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 23rem;">
+                        <div class="card-body">
+                            <a class="btn btn-danger important">
+                                <ion-icon name="bookmark-outline"></ion-icon> Important
+                            </a>
+                            <div class="time">
+                                <h4 class="card-title">7/12/2022</h4>
+                                <h5 class="card-title">00:00 PM </h5>
+                            </div>
+                            <p class="card-text">Deadline Code</p>
+
+                            <div class="bot">
+                                <a href="#" class="btn btn-primary">
+                                    <ion-icon class="icon" name="create-outline"></ion-icon>
+                                    <span>Update</span>
+                                </a>
+                                <a href="#" class="btn btn-success">
+                                    <ion-icon class="icon" name="checkmark-done-outline"></ion-icon> <span>Done</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 23rem;">
+                        <div class="card-body">
+                            <!-- <a class="btn btn-danger important">
+                                <ion-icon name="bookmark-outline"></ion-icon> Important
+                            </a> -->
+                            <div class="time">
+                                <h4 class="card-title">EveryDay</h4>
+                                <h5 class="card-title">4:00 </h5>
+                            </div>
+                            <p class="card-text">Study</p>
+
+                            <div class="bot">
+                                <a href="#" class="btn btn-primary">
+                                    <ion-icon class="icon" name="create-outline"></ion-icon>
+                                    <span>Update</span>
+                                </a>
+                                <a href="#" class="btn btn-success">
+                                    <ion-icon class="icon" name="checkmark-done-outline"></ion-icon> <span>Done</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="form">
+        <div id="card" class="card">
+
+            <div class="content">
+
+                <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Date</span>
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Time</span>
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Purpose</span>
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input required="required" type="text">
+                    <span>Status</span>
+                    <i></i>
+                </div>
+                <div class="submit">
+                    <div class="btn1">
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Send</span>
+                        </button>
+                    </div>
+                    <div class="btn2">
+                        <button id="noselect" class="noselect"><span class="text">Exit</span><span class="icon"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z">
+                                    </path>
+                                </svg></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./index.js"></script>
+
+</html>
