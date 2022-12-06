@@ -25,3 +25,4 @@ del.addEventListener("click", function () {
   });
 });
 console.log(del);
+AOS.init();
