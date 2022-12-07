@@ -1,8 +1,11 @@
 let btn = document.getElementById("button");
 btn.addEventListener("click", function () {
   let card = document.getElementById("card");
+  let card2 = document.getElementById("card2");
   card.style.opacity = "1";
   card.style.visibility = "visible";
+  card2.style.visibility = "hidden";
+  console.log(card2);
 });
 let del = document.getElementById("noselect");
 del.addEventListener("click", function () {
@@ -19,6 +22,8 @@ del.addEventListener("click", function () {
     if (result.isConfirmed) {
       Swal.fire("Exit!", "Your note has been exited.", "success");
       let card = document.getElementById("card");
+      let card2 = document.getElementById("card2");
+      card2.style.visibility = "visible";
       card.style.opacity = "0";
       card.style.visibility = "hidden";
     }
