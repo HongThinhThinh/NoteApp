@@ -721,4 +721,9 @@ body {
     margin-top: 75px;
     flex-direction: column;
   }
+}
+@media only screen and (max-width: 320px) {
+  .toDo__left__box {
+    width: 149px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
