@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
+.actived {
+  background: transparent !important;
+  transition: 3s;
+  color: white;
+}
 
 body {
   font-size: 1.6rem;
@@ -31,10 +36,23 @@ body {
   position: relative;
   animation: shake 1s linear infinite alternate, lightup 1s linear infinite;
   transform-origin: 0 0;
+  cursor: pointer;
+  &:hover {
+    background: #fffbeb;
+  }
+}
+.loader:hover::after {
+  background: #fffbeb;
 }
 
+.loader:hover::before {
+  height: 40px;
+  border: 5px solid #fffbeb;
+  top: 97%;
+}
 .loader::before {
   content: "";
+  transition: 1s;
   position: absolute;
   left: 50%;
   top: 100%;
@@ -45,6 +63,10 @@ body {
   border: 5px solid #ff3d00;
   border-top: none;
   border-radius: 0 0 20px 20px;
+  &:hover {
+    background: black;
+    height: 200px;
+  }
 }
 .loader::after {
   content: "";

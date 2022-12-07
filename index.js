@@ -7,6 +7,13 @@ btn.addEventListener("click", function () {
   card2.style.visibility = "hidden";
   console.log(card2);
 });
+let light = document.getElementById("light");
+light.addEventListener("click", function () {
+  let t = document.getElementById("card2");
+  t.classList.contains("actived")
+    ? t.classList.remove("actived")
+    : t.classList.add("actived");
+});
 let del = document.getElementById("noselect");
 del.addEventListener("click", function () {
   Swal.fire({
