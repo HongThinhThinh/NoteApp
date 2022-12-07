@@ -13,7 +13,7 @@ html {
 .actived {
   background: transparent !important;
   transition: 3s;
-  color: white;
+  color: #f6f6ed !important;
 }
 
 body {
@@ -224,6 +224,7 @@ body {
         h1 {
           font-size: 27px;
           font-weight: 600;
+          color: white;
         }
         &--right {
           width: 60%;
