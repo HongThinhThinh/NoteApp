@@ -11,12 +11,6 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-.actived {
-  background: transparent !important;
-  transition: 3s;
-  color: #f6f6ed !important;
-}
-
 body {
   font-size: 1.6rem;
   background: linear-gradient(60deg, #1e1330, #08080b);
@@ -26,6 +20,12 @@ body {
   background-repeat: no-repeat;
   font-family: "Josefin Sans", sans-serif;
   background-position: center center;
+}
+
+.actived {
+  background: transparent !important;
+  transition: 3s;
+  color: #f6f6ed !important;
 }
 
 .loader {
@@ -154,8 +154,9 @@ body {
   margin-left: 20px;
 }
 .toDo__left__box img {
-  width: 120px;
-  height: 120px;
+  border: 1 px solid red;
+  width: 180px;
+  height: 180px;
   position: absolute;
   top: -2%;
   left: 50%;
