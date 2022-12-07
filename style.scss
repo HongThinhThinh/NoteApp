@@ -210,7 +210,7 @@ body {
   &__right {
     width: 78%;
     height: 90vh;
-    background-color: white;
+    background-color: #ffffff2b;
     border-radius: 20px;
     margin-right: 50px;
     &__wrap {
@@ -251,6 +251,7 @@ body {
         flex-wrap: wrap;
         .card {
           width: 33.33%;
+          border-radius: 2px;
           .card-body {
             color: white;
             background-color: #0f123f;
@@ -720,7 +721,6 @@ body {
       }
     }
     &__right {
-      background-color: transparent !important;
       width: 50%;
       &__wrap {
         &__note {
